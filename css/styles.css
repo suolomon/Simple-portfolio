@@ -12,7 +12,6 @@
  Happy coding!
 */
 
-
 /* GOOGLE FONTS IMPORT */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 /* ------------------- */
@@ -229,7 +228,7 @@ input:checked + .slider:before {
 }
 /* grid-section media queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 808px) {
   .grid-section {
     grid-template-columns: 1fr;
   }
@@ -257,8 +256,7 @@ input:checked + .slider:before {
   letter-spacing: 4px;
   display: inline-block;
   margin-bottom: 20px;
-  color:#1c99fe;
-
+  color: #1c99fe;
 }
 /* content title media queries */
 @media screen and (max-width: 768px) {
@@ -413,6 +411,14 @@ input:checked + .slider:before {
   display: flex;
   justify-content: start;
 }
+/* img-container media queries */
+@media screen and (max-width: 808px) {
+  .img-container {
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+/* ----------------- */
 
 /* End of Grid Column 2 */
 /* End of CSS grid container */
