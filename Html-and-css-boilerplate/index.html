@@ -1,0 +1,108 @@
+<!--  
+ This is a boilerplate has all the HTML we shall use in the build. 
+ You will find comments on different sections for better navigation.
+
+ If you find yourself stuck in any of our codebase, just chat with us
+ and we'll help out. 
+
+ You can join the Slack community here:https://communityinviter.com/apps/j-for-javascript/join-the-community
+ Subscribe to my YouTube channel here:https://www.youtube.com/channel/UCeno4p-lBEFZjJKaJyt04aw
+
+ Happy coding!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Meta link for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ----------- -->
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- --------- -->
+    <!-- JS link -->
+    <script src="./js/index.js" defer></script>
+    <!-- ---------- -->
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- ---------- -->
+  </head>
+  <body>
+    <!-- NAV SECTION -->
+    <nav>
+      <img src="./assets/logo/logo.png" class="logo" />
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+    </nav>
+    <!-- END OF NAV SECTION -->
+    <main>
+      <!-- CSS grid container -->
+      <div class="grid-section">
+        <!-- COLUMN 1 -->
+        <div class="content">
+          <span class="title">Freelance Web Developer</span>
+          <h1>
+            Paul here, <br />I’m <span class="typed-text"></span
+            ><span class="cursor typing">&nbsp;</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et a omnis
+            quis. Unde libero cumque ex possimus ea nihil error exercitationem,
+            iste soluta provident delectus doloremque praesentium dolore ipsa!
+          </p>
+          <div class="btn-container">
+            <button
+              onclick="openWindow('https://drive.google.com/file/d/1gAkiz0ck7s5_5dF5hHtnvMA1MFT3NUqt/view?usp=sharing')"
+              class="btn"
+            >
+              Download CV
+            </button>
+            <a class="btn2" href="mailto:example@email.com">Email Me</a>
+          </div>
+          <!-- Social icons -->
+          <div class="icon-container">
+            <i
+              onclick="openWindow('https://github.com/suolomon')"
+              class="fa-brands fa-github"
+            ></i>
+            <i
+              onclick="openWindow('https://www.linkedin.com/in/solomon-talemwa-3b823120a/')"
+              class="fa-brands fa-linkedin"
+            ></i>
+            <i
+              onclick="openWindow('https://twitter.com/tmsolomon11')"
+              class="fa-brands fa-twitter"
+            ></i>
+            <i
+              onclick="openWindow('https://www.youtube.com/channel/UCeno4p-lBEFZjJKaJyt04aw')"
+              class="fa-brands fa-youtube"
+            ></i>
+          </div>
+          <!-- ------------------ -->
+        </div>
+        <!-- END OF COLUMN 1 -->
+
+        <!-- COLUMN 2 -->
+        <div class="img-container">
+          <img
+            class="img-responsive"
+            src="./assets/images/portfolio-man.jpeg"
+            alt=""
+          />
+        </div>
+        <!-- END OF COLUMN 2 -->
+      </div>
+    </main>
+    <!-- END OF MAIN SECTION -->
+  </body>
+</html>
